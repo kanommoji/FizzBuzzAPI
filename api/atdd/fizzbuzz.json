@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "20d3ab52-e986-4442-8c78-8e9abac0e8f4",
+		"name": "FizzBuzz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Convert number 2 to string 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"2\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 3 to Fizz",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is Fizz\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"Fizz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":3\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 4 to string 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is 4\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"4\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":4\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 5 to Buzz",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is Buzz\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"Buzz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 6 to Fizz",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is Fizz\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"Fizz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":6\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 7 to string 7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is 7\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"7\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":7\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 14 to string 14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is 14\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"14\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":14\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 15 to FizzBuzz",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is FizzBuzz\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"FizzBuzz\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":15\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert number 16 to string 16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d20b756-53e4-4aff-abca-90e118dcb87f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"FizzBuzz is 16\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fizzbuzz).to.eql(\"16\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":16\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fizzbuzz/convert_to_fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fizzbuzz",
+						"convert_to_fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
